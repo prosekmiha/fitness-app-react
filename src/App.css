@@ -1,0 +1,745 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gabarito:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Gabarito', Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+body {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+
+}
+
+header {
+    position: relative;
+    display: flex;
+    height: 10vh;   
+    z-index: 99;
+    justify-content: center;
+}
+
+.header-main {
+    background-color: #27374D;
+}
+
+.header-main a {
+    color: white;
+}
+
+.header-two {
+    background-color: white;
+
+}
+
+.header-two a {
+    color: black;
+}
+
+.navMain {
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.navTwo {
+    justify-content: center;
+}
+
+nav {
+    width: 1400px;
+    position: relative;
+    display: flex;
+    margin: 0 50px 0 50px;
+    font-size: 1.2rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.nav1 {
+    position: relative;
+    display: flex;
+    gap: 40px;
+}
+
+.nav2 {
+    position: relative;
+    display: flex;
+    gap: 20px;
+}
+
+
+.link {
+    cursor: pointer;
+    border-bottom: 4px solid transparent;
+}
+
+.link:hover {
+    border-bottom: 4px solid #27374D;
+}
+
+.hero-container {
+    display: flex;
+    top: 0;
+    position: relative;
+
+    height: 100vh;
+    width: 100%;
+    background-color: #27374D;
+    flex-direction: row;
+}
+
+.hero-left {
+    position: flex;
+    position: relative;
+    width: 45vw;
+    height: 100vh;
+    white-space: pre-line;
+}
+
+.hero-left h1 {
+    position: relative;
+    font-size: 5rem;
+    color: white;
+    margin-top: 150px;
+    margin-left: 18vw;
+    line-height: 100px;
+    z-index: 99;
+}
+
+.hero-left h2 {
+    position: relative;
+    color: white;
+    margin-left: 40%;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.hero-left button {
+    position: relative;
+    margin-top: 60px;
+    margin-left: 40%;
+    height: 60px;
+    width: 180px;
+    border-radius: 0;
+    background-color: #27374D;
+    border: 1px solid white;
+    color: white;
+    font-size: 20px;
+}
+
+.hero-right {
+    width: 55vw;
+    height: 100vh;
+    display: flex;
+    position: relative;    
+
+    padding: 20px 20px 0 20px;
+    overflow: hidden;
+
+}
+
+.hero-right img {
+    position: relative;
+    width: 50vw;
+    object-fit: cover;
+    object-position: 20% 0px;
+    transition: transform .8s;
+    filter: contrast(110%);
+    filter: brightness(110%);
+}
+
+.hero-right img:hover {
+    transform: scale(1.02);
+}
+
+.search-div-home {
+    display: flex;
+    position: relative;
+    background-color: white;
+    height: 40vh;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search-div-home h1 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+
+}
+
+.search-input-home {
+    position: relative;
+    width: 450px;
+    height: 50px;
+    font-size: larger;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.search-btn-home {
+    height: 50px;
+    width: 100px;
+    margin-left: 5px;
+}
+
+.search-div {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.search-div h2 {
+    font-size: 2.2rem;
+}
+
+
+.search-input {
+    border-radius: 5px;
+    height: 40px;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #2222;
+    font-size: larger;
+
+}
+
+.search-btn {
+    margin-left: 10px;
+    height: 40px;
+    width: 100px;
+}
+
+.search-btn:hover {
+    background-color: #27374D;
+    color: white;
+}
+
+
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 20px 200px;
+    flex-wrap: wrap;
+}
+
+
+.filter-popup {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    z-index: 99;
+    background-color: white;
+    width: 170px;
+    padding: 10px;
+    border: 1px solid #c2c3c4;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-popup1 {
+    left: 210px;
+}
+
+.filter-popup2 {
+    left: 400px;
+}
+
+.filter-popup button {
+    width: 100%;
+}
+
+
+.filter-btn {
+    margin: 10px;
+}
+
+
+.filter-button {
+    border-color: #2222;
+    margin: 2px;
+}
+
+.exercises-container {
+    margin: auto;
+    width: 100%;
+}
+
+.exercises {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+
+.exercise-item {
+    position: relative;
+    margin: 15px;
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #cccaca;
+}
+
+.exercise-item:hover {
+    box-shadow: -1px 2px 17px 1px rgba(0,0,0,0.26);
+    -webkit-box-shadow: -1px 2px 17px 1px rgba(0,0,0,0.26);
+    -moz-box-shadow: -1px 2px 17px 1px rgba(0,0,0,0.26);
+}
+
+.exercise-item p {
+    color: black;
+    padding-top: 20px;  
+    font-size: 1.2rem;
+}
+
+.exercise-item img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.exercise-item div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.exercise-item div:last-child {
+    flex-direction: column;
+    text-align: center;
+}
+
+.addExerciseBtn {
+    margin-top: 20px;
+    border: 1px solid #c2c3c4;
+}
+
+
+.equipment-target {
+    display: flex;
+    
+}
+
+.equipment-target div {
+    margin-right: 10px;
+    padding: 5px 8px;
+    border-radius: 10px;
+}
+
+.equipment-target .equipment {
+    background-color: lightblue;
+} 
+
+.equipment-target .target {
+    background-color: lightpink;
+} 
+
+.fav-icon {
+    color: red;
+}
+
+.fav-border-icon {
+    color: #fc6868;
+
+}
+
+.exercise {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.exercise-left {
+    border: 1px solid darkgrey;
+    width: 50vw;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border-radius: 8px;
+}
+
+.exercise-left img{
+    width: 450px;
+    
+}
+
+.exercise-right {
+    border: 1px solid darkgrey;
+    width: 50vw;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 30px 50px 150px 50px;
+    font-size: 1.3rem;
+    justify-content: space-between;
+}
+
+.exercise-right div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.exercise-right-text {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.exercise-right-text h1 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.exercise-right-text p {
+    text-align: justify;
+    
+}
+
+.horizontal-scrollbar-container {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 30vh;
+    
+}
+
+
+
+.active-button {
+    color: white;
+    background-color: grey;
+}
+
+.show-more-container {
+    display: flex;
+    justify-content: center;
+    margin: 1vw;
+}
+
+.show-more-btn {
+    padding: 20px 30px;
+    border-radius: 20px;
+    border-color: #2222;
+    font-size: 1rem;
+    margin: 20px;
+
+}
+
+.favourite-exercises-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.favourite-exercises {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.favourite-exercises-container button{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.myworkoutsplit-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    
+    
+}
+
+
+
+.workoutSplit-container {
+    position: relative;
+    border: 1px solid #d9dbde;
+    border-radius: 10px;
+    padding: 30px;
+
+    
+}
+
+.deleteAllBtn {
+    position: relative;
+
+}
+
+.workoutSplit-days {
+    position: relative;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.workoutSplit-day{
+    width: 14.2%;
+    font-size: 1.2rem;
+    padding: 1vh;
+}
+
+.workoutSplit-table {
+    border: 1px solid #c3c4c7;
+    width: 100%;
+    display: flex;
+}
+
+.workoutSplit-table-td {
+    width: 14.3%;
+    
+}
+
+.workoutSplit-table-tr {
+    position: relative;
+    border: 1px solid #c2c3c4;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+    padding: 12%;
+}
+
+.workoutSplit-table-tr:hover .deleteIcon {
+    opacity: 100;
+
+}
+
+.workoutSplit-addBtns {
+    display: flex;
+    width: 90vw;
+    position: relative;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.workoutSplit-addBtn{
+    width: 14.3%;
+}
+
+.workoutSplit-addBtn button{
+    width: 100%;
+    height: 50px;
+}
+
+
+.addExercise-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: white;
+}
+
+
+.closeIcon {
+    position: absolute;
+    right: 60px;
+    top: 60px;
+}
+
+.closeIcon:hover {
+    cursor: pointer;
+}
+
+.deleteIcon {
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+    cursor: pointer;
+    opacity: 0;
+
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .hero-left h1 {
+        font-size: 3rem;
+        line-height: 60px;
+    }
+    .search-div-home h1 {
+        font-size: 1.2rem;
+    }
+    .search-input-home {
+        width: 150px;
+    }
+    .filter-container {
+        justify-content: center;
+    }
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+    header {
+        height: 20vh;
+    }
+    .exercise {
+        flex-direction: column;
+    }
+    .exercise-left {
+        width: 95%;
+    }
+    .exercise-right {
+        width: 95%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .hero-left h1 {
+        font-size: 3rem;
+        line-height: 70px;
+    }
+    .search-div-home h1 {
+        font-size: 2rem;
+    }
+    .search-input-home {
+        width: 250px;
+    }
+    .filter-container {
+        justify-content: center;
+    }
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+    header {
+        height: 20vh;
+    }
+    .exercise {
+        flex-direction: column;
+    }
+    .exercise-left {
+        width: 95%;
+    }
+    .exercise-right {
+        width: 95%;
+    }
+    
+}
+
+.loginRegister-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginRegister-container h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.loginRegister-container .loginRegisterForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.loginRegister-container .loginRegisterForm input {
+    width: 300px;
+    height: 30px;
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .hero-left h1 {
+        font-size: 4rem;
+        line-height: 80px;
+    }
+    .search-div-home h1 {
+        font-size: 2.2rem;
+    }
+    .filter-container {
+        justify-content: center;
+    }
+    nav {
+        flex-direction: row;
+        gap: 100px;
+        
+    }
+    header {
+        height: 10vh;
+    }
+    .exercise {
+        flex-direction: row;
+    }
+    .exercise-left {
+        width: 50vw;
+    }
+    .exercise-right {
+        width: 50vw;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1020px) {
+    .hero-left h1 {
+        font-size: 4.5rem;
+        line-height: 100px;
+    }
+    .search-div-home h1 {
+        font-size: 2.4rem;
+    }
+    .filter-container {
+        justify-content: center;
+    }
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1140px) {
+    .hero-left h1 {
+        font-size: 5rem;
+        line-height: 100px;
+    }
+    .search-div-home h1 {
+        font-size: 2.4rem;
+    }
+    .search-input-home {
+        width: 450px;
+    }
+    .filter-container {
+        justify-content: space-between;
+    }
+}

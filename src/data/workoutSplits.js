@@ -1,0 +1,9 @@
+export let workoutSplits = [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+];
